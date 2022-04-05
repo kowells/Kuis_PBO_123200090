@@ -34,15 +34,15 @@ public class Main {
         String nama = inputString.nextLine();
         
         System.out.print("Input Nilai Tes Tulis : ");
-        double tesTulis = input.nextDouble();
+        double hitungTulis = input.nextDouble();
         
         System.out.print("Input Nilai Tes Coding : ");
-        double tesCoding = input.nextDouble();
+        double hitungCoding = input.nextDouble();
         
         System.out.print("Input Nilai Tes Wawancara : ");
-        double tesWawancara = input.nextDouble();
+        double hitungWawancara = input.nextDouble();
         if(menu == 1){
-            AndroidDev Andro = new AndroidDev(nama, nik, tesTulis, tesCoding, tesWawancara);
+            AndroidDev Andro = new AndroidDev(nama, nik, hitungTulis, hitungCoding, hitungWawancara);
             while(true){
                 Andro.hitungHasil();
                 System.out.println("\nMenu");
@@ -55,16 +55,16 @@ public class Main {
                     case 1 : 
                         System.out.println("\nFORM EDIT");
                         System.out.print("Input Nilai Tes Tulis : ");
-                        tesTulis = input.nextDouble();
-                        Andro.setNilaiTulis(tesTulis);
+                        hitungTulis = input.nextDouble();
+                        Andro.setNilaiTulis(hitungTulis);
                         
                         System.out.print("Input Nilai Tes Coding : ");
-                        tesCoding = input.nextDouble();
-                        Andro.setNilaiCoding(tesCoding);
+                        hitungCoding = input.nextDouble();
+                        Andro.setNilaiCoding(hitungCoding);
 
                         System.out.print("Input Nilai Tes Wawancara : ");
-                        tesWawancara = input.nextDouble();
-                        Andro.setNilaiWawancara(tesWawancara);
+                        hitungWawancara = input.nextDouble();
+                        Andro.setNilaiWawancara(hitungWawancara);
                         
                         break;
                     case 2 :
@@ -85,7 +85,7 @@ public class Main {
                 }
             }
         }else if(menu == 2){
-            WebDev Web = new WebDev(nama, nik, tesTulis, tesCoding, tesWawancara);
+            WebDev Web = new WebDev(nama, nik, hitungTulis, hitungCoding,hitungWawancara);
              while(true){
                 Web.hitungHasil();
                 System.out.println("\nMenu");
@@ -98,16 +98,16 @@ public class Main {
                     case 1 : 
                         System.out.println("\nFORM EDIT");
                         System.out.print("Input Nilai Tes Tulis : ");
-                        tesTulis = input.nextDouble();
-                        Web.setNilaiTulis(tesTulis);
+                        hitungTulis = input.nextDouble();
+                        Web.setNilaiTulis(hitungTulis);
                         
                         System.out.print("Input Nilai Tes Coding : ");
-                        tesCoding = input.nextDouble();
-                        Web.setNilaiCoding(tesCoding);
+                        hitungCoding = input.nextDouble();
+                        Web.setNilaiCoding(hitungCoding);
 
                         System.out.print("Input Nilai Tes Wawancara : ");
-                        tesWawancara = input.nextDouble();
-                        Web.setNilaiWawancara(tesWawancara);
+                        hitungWawancara = input.nextDouble();
+                        Web.setNilaiWawancara(hitungWawancara);
                         
                         break;
                     case 2 :
